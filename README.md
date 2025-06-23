@@ -111,8 +111,8 @@ python moe/examples/infer_coding.py --checkpoint_path ./moe/examples/checkpoints
 
 ## Training Tips
 
-- **Batch Size**: Start with 2–8 depending on sequence length and GPU memory. Gradually scale if memory allows.
-- **Epochs**: 5–50 depending on task complexity and convergence speed.
+- **Batch Size**: Start with 256 depending on sequence length and GPU memory. Gradually scale if memory allows.
+- **Epochs**: 50–150 depending on task complexity and convergence speed.
 - **Optimizer**: AdamW is used with a learning rate of 1e-5. You may try schedulers like cosine annealing for stability.
 - **Precision**: Use mixed-precision training (`torch.cuda.amp`) to reduce memory usage and speed up training.
 - **Hardware**: A CUDA-enabled GPU with ≥12GB memory is recommended for training with 2048-d hidden sizes.
