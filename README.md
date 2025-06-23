@@ -23,12 +23,12 @@ In this implementation:
 
 ```
 MoE/
-├── data/                       # Preprocessed datasets (placeholder .gitkeep included)
+├── data/                       # Preprocessed datasets
 │   ├── coding/
 │   ├── math/
 │   └── cot/
 
-├── datasets/                  # Saved HuggingFace datasets (ignored in Git, .gitkeep added)
+├── datasets/                  # Saved HuggingFace datasets
 │   └── .gitkeep
 
 ├── scripts/                    # Dataset preparation scripts
@@ -44,7 +44,7 @@ MoE/
 │       ├── train_moe.py       # Pretrain experts independently
 │       ├── fine_tune_moe.py   # Integrate MoE into GPT-Neo and fine-tune
 │       ├── infer_coding.py    # Run inference using coding expert
-│       └── checkpoints/       # Saved experts and fine-tuned model (.gitkeep added)
+│       └── checkpoints/       # Saved experts and fine-tuned model
 
 ├── requirements.txt           # Required Python packages
 ├── .gitignore
