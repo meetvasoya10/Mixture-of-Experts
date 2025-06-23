@@ -1,4 +1,4 @@
-# Mixture of Experts (MoE) - Custom Implementation
+# Mixture of Experts (MoE) - GPT-Neo-1.3B
 
 This repository provides a clean and extensible implementation of a **Mixture of Experts (MoE)** model, where inputs are routed to specialized expert networks via a learned gating mechanism. The implementation integrates seamlessly with GPT-Neo and supports modular pretraining, fine-tuning, and inference.
 
